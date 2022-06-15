@@ -11,7 +11,7 @@ repositories {
     mavenCentral()
 }
 dependencies {
-    implementation("com.atlassian.upm:bamboo-host-license-provider:1000.0.0.4-D20160902T203317")
+    implementation("org.clojars.vrs:gradle-licenses:0.2.0")
     testImplementation(kotlin("test-junit"))
 }
 tasks.withType<KotlinCompile>() {
