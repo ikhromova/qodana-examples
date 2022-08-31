@@ -1,0 +1,119 @@
+{"version":"3","listProblem":[{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Remove unnecessary parentheses from function call with lambda",
+  "severity": "Info",
+  "comment": "Remove unnecessary parentheses from function call with lambda",
+  "detailsInfo": "Reports redundant empty parentheses of function calls where the only parameter is a lambda that's outside the parentheses.\n\nUse the 'Remove unnecessary parentheses from function call with lambda' quick-fix to clean up the code.\n\n**Examples:**\n\n\n      fun foo() {\n          listOf(1).forEach() {  }\n      }\n\nAfter the quick-fix is applied:\n\n\n      fun foo() {\n          listOf(1).forEach {  }\n      }\n",
+  "sources": [
+    {
+      "type": "file",
+      "path": "build.gradle.kts",
+      "language": "kotlin",
+      "line": 17,
+      "offset": 30,
+      "length": 2,
+      "code": {
+        "startLine": 15,
+        "length": 2,
+        "offset": 76,
+        "surroundingCode": "    testImplementation(kotlin(\"test-junit\"))\n}\ntasks.withType<KotlinCompile>() {\n    kotlinOptions.jvmTarget = \"1.8\"\n}"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "qodana-examples",
+    "inspectionName": "RemoveEmptyParenthesesFromLambdaCall",
+    "baselineState": "new"
+  },
+  "hash": "4fb0f578d27f4ed3f2aeede48fbb6f06b3f030d26a4228ce0dabb0b18e29ad55"
+},{
+  "tool": "Code Inspection",
+  "category": "Redundant constructs",
+  "type": "Redundant semicolon",
+  "severity": "High",
+  "comment": "Redundant semicolon",
+  "detailsInfo": "Reports redundant semicolons (`;`) that can be safely removed.\n\n\nKotlin does not require a semicolon at the end of each statement or expression.\nA quick-fix is suggested to remove redundant semicolons.\n\n**Example:**\n\n\n      val myMap = mapOf(\"one\" to 1, \"two\" to 2);\n      myMap.forEach { (key, value) ->  print(\"$key -> $value\")};\n\nAfter the quick-fix is applied:\n\n\n      val myMap = mapOf(\"one\" to 1, \"two\" to 2)\n      myMap.forEach { (key, value) ->  print(\"$key -> $value\")}\n\nThere are two cases though where a semicolon is required:\n\n1. Several statements placed on a single line need to be separated with semicolons:\n\n\n         map.forEach { val (key, value) = it; println(\"$key -> $value\") }\n\n2. `enum` classes that also declare properties or functions, require a semicolon after the list of enum constants:\n\n\n         enum class Mode {\n             SILENT, VERBOSE;\n\n             fun isSilent(): Boolean = this == SILENT\n         }\n               \n",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/kotlin/main.kt",
+      "language": "kotlin",
+      "line": 2,
+      "offset": 28,
+      "length": 1,
+      "code": {
+        "startLine": 1,
+        "length": 1,
+        "offset": 59,
+        "surroundingCode": "fun main(args: Array<String>) {\n    println(\"Hello World!\");\n}"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "qodana-examples.main",
+    "inspectionName": "RedundantSemicolon",
+    "isTechDebt": "true",
+    "baselineState": "unchanged"
+  },
+  "hash": "d89ba00175ef06ae25ee7b8a97525ddf703c1d7775d474678d5c5cc508d18e8a"
+},{
+  "tool": "Code Inspection",
+  "category": "Dependency analysis",
+  "type": "Check dependency licenses",
+  "severity": "High",
+  "comment": "'gradle-licenses' ('0.2.0') licenses cannot be recognized",
+  "detailsInfo": "Check dependencies licenses for possible problems: missing or prohibited licenses, or other compliance issues",
+  "sources": [
+    {
+      "type": "file",
+      "path": "qodana-examples.main",
+      "language": "",
+      "line": 0,
+      "offset": 0,
+      "length": 0,
+      "code": {
+        "startLine": 0,
+        "length": 0,
+        "offset": 0,
+        "surroundingCode": ""
+      }
+    }
+  ],
+  "attributes": {
+    "module": "qodana-examples.main",
+    "inspectionName": "CheckDependencyLicenses",
+    "baselineState": "new"
+  },
+  "hash": "5c1f4f22298ba508f6bc614f1c3f7f878a60137c40d8c8353573e7dad982fbfa"
+},{
+  "tool": "Code Inspection",
+  "category": "General",
+  "type": "Kotlin annotator",
+  "severity": "Critical",
+  "comment": "This variable must either have a type annotation or be initialized",
+  "detailsInfo": "Allows viewing the problems reported by the Kotlin annotator: compilation problems, references unresolved by the IDE, and so on.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "src/main/kotlin/main.kt",
+      "language": "kotlin",
+      "line": 3,
+      "offset": 9,
+      "length": 6,
+      "code": {
+        "startLine": 1,
+        "length": 6,
+        "offset": 69,
+        "surroundingCode": "fun main(args: Array<String>) {\n    println(\"Hello World!\");\n    val isSmth\n}"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "qodana-examples.main",
+    "inspectionName": "KotlinAnnotator",
+    "isTechDebt": "true",
+    "baselineState": "absent"
+  },
+  "hash": "018569cf1ed06804ee4f0cca290d773e1e90946cc0c93f8003f17b33702221d2"
+}]}

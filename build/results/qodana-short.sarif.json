@@ -1,0 +1,72 @@
+{
+  "$schema": "https://raw.githubusercontent.com/schemastore/schemastore/master/src/schemas/json/sarif-2.1.0-rtm.5.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "QDJVM",
+          "fullName": "Qodana for JVM",
+          "version": "222.3695.82",
+          "rules": [],
+          "taxa": [],
+          "language": "en-US",
+          "contents": [
+            "localizedData",
+            "nonLocalizedData"
+          ],
+          "isComprehensive": false
+        },
+        "extensions": []
+      },
+      "invocations": [
+        {
+          "exitCode": 0,
+          "toolExecutionNotifications": [],
+          "executionSuccessful": true
+        }
+      ],
+      "language": "en-US",
+      "versionControlProvenance": [
+        {
+          "repositoryUri": "https://github.com/ikhromova/qodana-examples.git",
+          "revisionId": "5ef836b8f90bb0d4a47087f3bbafe1c713e798e7",
+          "branch": "main",
+          "properties": {
+            "repoUrl": "https://github.com/ikhromova/qodana-examples.git",
+            "lastAuthorName": "Irina.Khromova",
+            "vcsType": "Git",
+            "lastAuthorEmail": "irina.khromova@jetbrains.com",
+            "tags": [
+              "repoUrl",
+              "lastAuthorEmail",
+              "lastAuthorName",
+              "vcsType"
+            ]
+          }
+        }
+      ],
+      "results": [],
+      "automationDetails": {
+        "id": "qodana-examples/qodana/2022-08-26",
+        "guid": "38660657-a676-46d4-a6c5-76192e64241d",
+        "properties": {
+          "jobUrl": "",
+          "tags": [
+            "jobUrl"
+          ]
+        }
+      },
+      "newlineSequences": [
+        "\r\n",
+        "\n"
+      ],
+      "properties": {
+        "deviceId": "200820300000000-0000-0000-0000-000000000000",
+        "tags": [
+          "deviceId"
+        ]
+      }
+    }
+  ]
+}

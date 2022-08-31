@@ -1,0 +1,18 @@
+{
+  "total": 4,
+  "tools inspection": {
+    "Code Inspection": 4
+  },
+  "attributes": {
+    "vcs": {
+      "sarifIdea": {
+        "repositoryUri": "https://github.com/ikhromova/qodana-examples.git",
+        "revisionId": "5ef836b8f90bb0d4a47087f3bbafe1c713e798e7",
+        "branch": "main"
+      }
+    },
+    "deviceId": "200820300000000-0000-0000-0000-000000000000",
+    "jobUrl": "",
+    "repoUrl": "https://github.com/ikhromova/qodana-examples.git"
+  }
+}
