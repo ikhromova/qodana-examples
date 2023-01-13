@@ -11,10 +11,10 @@ repositories {
     mavenCentral()
 }
 dependencies {
-    implementation("org.clojars.vrs:gradle-licenses:0.2.0")
+    implementation("net.sf.saxon:Saxon-HE:10.6")
     testImplementation(kotlin("test-junit"))
 }
-tasks.withType<KotlinCompile>() {
+tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
 }
 application {

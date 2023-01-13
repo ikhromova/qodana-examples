@@ -1,0 +1,29 @@
+{"version":"3","listProblem":[{
+  "tool": "Code Inspection",
+  "category": "HTML",
+  "type": "Wrong attribute value",
+  "severity": "High",
+  "comment": "Wrong attribute value",
+  "detailsInfo": "Reports an incorrect HTML attribute value.",
+  "sources": [
+    {
+      "type": "file",
+      "path": "results/log/indexing-diagnostic/project.15375f63/diagnostic-2023-01-04-13-07-54.919.html",
+      "language": "HTML",
+      "line": 407,
+      "offset": 59,
+      "length": 4,
+      "code": {
+        "startLine": 405,
+        "length": 4,
+        "offset": 108,
+        "surroundingCode": "              <td>0</td>\n              <td>0</td>\n              <td><textarea rows=\"10\" cols=\"75\" readonly=\"true\" placeholder=\"empty\" style=\"white-space: pre; border: none\">Not collected for refresh</textarea></td>\n            </tr>\n          </tbody>"
+      }
+    }
+  ],
+  "attributes": {
+    "module": "qodana-examples",
+    "inspectionName": "HtmlWrongAttributeValue"
+  },
+  "hash": "362d90e9be786bfea089924c53d57e2fd237a232b5be899861b5c14c4a37f58f"
+}]}

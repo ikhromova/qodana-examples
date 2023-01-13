@@ -1,0 +1,57 @@
+[
+  {
+    "name": "annotations",
+    "version": "13.0",
+    "homepage_url": "http://www.jetbrains.org",
+    "licenses": [
+      {
+        "licenseId": "Apache-2.0",
+        "homepageUrl": "http://www.apache.org/licenses/"
+      }
+    ]
+  },
+  {
+    "name": "kotlin-stdlib-common",
+    "version": "1.4.10",
+    "homepage_url": "",
+    "licenses": [
+      {
+        "licenseId": "Apache-2.0",
+        "homepageUrl": "http://www.apache.org/licenses/"
+      }
+    ]
+  },
+  {
+    "name": "kotlin-stdlib-jdk7",
+    "version": "1.4.10",
+    "homepage_url": "",
+    "licenses": [
+      {
+        "licenseId": "Apache-2.0",
+        "homepageUrl": "http://www.apache.org/licenses/"
+      }
+    ]
+  },
+  {
+    "name": "kotlin-stdlib-jdk8",
+    "version": "1.4.10",
+    "homepage_url": "",
+    "licenses": [
+      {
+        "licenseId": "Apache-2.0",
+        "homepageUrl": "http://www.apache.org/licenses/"
+      }
+    ]
+  },
+  {
+    "name": "kotlin-stdlib",
+    "version": "1.4.10",
+    "homepage_url": "",
+    "licenses": [
+      {
+        "licenseId": "Apache-2.0",
+        "homepageUrl": "http://www.apache.org/licenses/"
+      }
+    ]
+  }
+]
